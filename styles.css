@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background-color: #d16005;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  background: #009ee7;
+  background: #e78b00;
   color: white;
   text-align: center;
   align-items: center;
@@ -70,7 +70,7 @@ body {
 }
 
 .hero {
-  background-color: #b1edf7;
+  /* background-color: #f7dfb1; */
   padding: 50px;
   text-align: center;
   display: flex;
@@ -98,29 +98,32 @@ body {
   font-size: 70px;
   line-height: 100px;
   font-weight: 800;
-  color: #048ecf;
+  color: #c7ecfc;
   text-align: start;
 }
 
 .hero-text {
   font-size: 20px;
   line-height: 1.5;
-  color: #bdbdbd;
+  color: #ffffff;
   text-align: start;
 }
 
 .hero-btn {
-  padding: 15px 30px;
-  background-color: #009ee7;
+  background: rgb(110, 94, 94);
+  border: 1px solid red;
+  border-radius: 3px;
   color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: all 300ms ease-in;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  text-decoration: none;
+  cursor: progress;
 }
 .hero-btn:hover {
-  background-color: #007bff;
-  transform: scale(1.1);
+  background: rgb(0, 0, 0);
+  border: 1px solid red;
+  color: red;
 }
 
 .services {
@@ -138,10 +141,10 @@ body {
   text-align: center;
   justify-content: center;
   padding: 20px;
-  background-color: #29a5f7;
+  background-color: #847d77;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0 8px 8px rgba(14, 142, 240, 0.537);
+  box-shadow: 0 8px 8px rgba(240, 157, 14, 0.537);
 }
 
 .service-image {
@@ -151,10 +154,10 @@ body {
   transition: all 300ms ease-in;
 }
 
-.service-image:hover {
+/* .service-image:hover {
   background-color: #007bff;
   transform: scale(1.1);
-}
+} */
 
 .service-header {
   font-size: 35px;
@@ -180,10 +183,10 @@ body {
   text-align: center;
   justify-content: center;
   padding: 20px;
-  background-color: #29a5f7;
+  /* background-color: #29a5f7; */
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0 8px 8px rgba(14, 142, 240, 0.537);
+  box-shadow: 0 8px 8px rgba(240, 165, 14, 0.537);
 }
 
 .Blogs {
@@ -202,7 +205,6 @@ body {
   transition: all 300ms ease-in;
 }
 
-
 .blog-text {
   font-size: 20px;
   color: #000000;
@@ -216,21 +218,158 @@ body {
   text-align: center;
 }
 
-.blog-text1{
+.blog-text1 {
   font-size: 20px;
   color: #edeaea;
   text-align: justify;
   font-weight: 500;
 }
 
-.blog-text1:hover{
+.blog-text1:hover {
   font-size: 20px;
   color: #ffbd39;
 }
 
-.blog-text2{
-  margin-top:-9px;
+.blog-text2 {
+  margin-top: -9px;
   font-size: 15px;
   color: #090000;
   text-align: justify;
+}
+
+/* Container for the form */
+.form-container {
+  max-width: 400px; /* Maximum width of the form */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Heading style */
+h1 {
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form style */
+form {
+  margin-top: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: auto 1fr; /* Two columns: auto for labels, 1fr for inputs */
+  gap: 10px; /* Space between items */
+}
+
+/* Label style */
+label {
+  display: block; /* Make labels block-level elements */
+  margin-bottom: 10px;
+  font-weight: 600;
+  align-self: center; /* Center-align labels vertically */
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  width: 100%; /* Full width of the grid column */
+  padding: 10px; /* Padding inside inputs/textarea */
+  margin-bottom: 15px; /* Space below inputs/textarea */
+  border: 1px solid #ccc; /* Border around inputs/textarea */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Specific styling for textarea to span both columns */
+textarea {
+  grid-column: span 2; /* Span both columns in the grid */
+}
+
+/* Button style */
+button {
+  width: 100%; /* Full width of the grid column */
+  padding: 10px; /* Padding inside the button */
+  background-color: #ffffff; /* White background color */
+  color: rgb(0, 0, 0); /* Black text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  grid-column: span 2; /* Span both columns in the grid */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #046ad6; /* Change background color on hover */
+}
+
+
+.service-header {
+  padding: 10px;
+
+  background-color: #691090fa;
+}
+
+
+.services-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-h1 {
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 800;
+  text-align: center;
+}
+.bread-list {
+  display: flex;
+  padding: 4px 9px;
+  max-width: 30%;
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.bread-list li {
+  list-style: none;
+  color: #d16005;
+  font-weight: 400;
+  font-size: 20px;
+  
+}
+
+.bread-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bread-list a:hover{
+  color: #d16005;
+}
+.right{
+  width: 50%;
+  padding: 50px;
+}
+
+.left{
+  color: white;
+  width: 50%;
+  padding: 50px;
+}
+
+.left-h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.left-con{
+  padding-left: 1.4rem;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 5px double #fff;
+}
+
+
+
+.right{
+  color: white;
 }
